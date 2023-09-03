@@ -14,4 +14,7 @@
   "devDependencies": {
     "@types/express": "^4.17.13"
   }
+    "pages": {
+        "": "src/index.html"
+    }
 }
