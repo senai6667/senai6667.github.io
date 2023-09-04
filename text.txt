@@ -1,1 +1,45 @@
-"hello world"
+在Windows系统上，使用TypeScript在GitHub上建立一个自己的博客，你需要创建以下文件：
+
+1. `package.json`：一个JSON文件，用于存储项目的元数据，包括依赖项、脚本等。
+
+2. `tsconfig.json`：一个JSON文件，用于配置TypeScript编译器的选项。
+
+3. `.gitignore`：一个文本文件，用于指定哪些文件和文件夹应该被Git忽略。
+
+4. `src/`：一个包含源代码的文件夹。
+
+   - `index.ts`：入口文件，用于启动应用程序。
+   - `app.ts`：应用程序的主要逻辑文件。
+   - `renderer.ts`：处理UI渲染的文件。
+
+5. `public/`：一个包含静态资源的文件夹。
+
+   - `index.html`：HTML模板文件。
+   - `styles.css`：CSS样式文件。
+
+这些文件各自的作用如下：
+
+- `package.json`：定义项目的依赖项和脚本，例如启动应用程序的命令。
+- `tsconfig.json`：配置TypeScript编译器的选项，例如目标ES版本、模块解析策略等。
+- `.gitignore`：告诉Git忽略哪些文件和文件夹，例如`node_modules`和`dist`文件夹。
+- `src/`：包含应用程序的源代码。
+- `public/`：包含静态资源，例如HTML模板和CSS样式。
+
+
+1. Node.js:下载并安装最新版本的 Node.js，它是一个基于 Chrome V8 引擎的 JavaScript 运行时环境，支持 TypeScript。
+
+2. npm（(Node Package Manager):是一个包管理器，用于安装和管理 Node.js 应用程序的依赖项。
+
+3. TypeScript:下载并安装 TypeScript 编译器，将 TypeScript 代码转换为 JavaScript 代码。
+
+4. ts-node:这是一个用于在 Node.js 环境中运行 TypeScript 代码的命令行工具。
+
+5. GitHub Desktop:下载并安装 GitHub Desktop，用于与 GitHub 仓库进行本地和远程操作。
+
+6.marked:一个用于解析 Markdown 文本的 JavaScript 库，用于生成 HTML。
+
+7. express:一个用于创建 Web 应用程序的 JavaScript 库，支持 TypeScript。
+
+8. ts-express:一个用于将 Express 与 TypeScript 结合使用的中间件。
+
+9. body-parser:一个用于解析请求体数据的 JavaScript 库。
