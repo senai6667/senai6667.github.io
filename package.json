@@ -1,20 +1,27 @@
 {
-  "name": "my-blog",
-  "version": "1.0.0",
-  "description": "A blog using Typescript and Express",
-  "main": "dist/index.js",
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "npm run build && node dist/index.js",
-    "build": "tsc"
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
+    "netlify": "npm run clean && npm run build"
+  },
+  "hexo": {
+    "version": "6.3.0"
   },
   "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.13",
-    "ts-node": "^13.0.0"
-  },
-  "pages": {
-    "": "src/index.html"
+    "hexo": "^6.3.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^3.0.0",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^6.0.0",
+    "hexo-renderer-stylus": "^3.0.0",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-landscape": "^1.0.0"
   }
 }
