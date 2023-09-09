@@ -28,4 +28,4 @@ New-Item -ItemType File -Path "D:/blog/README.md"
 ```
 4. 创建一个GitHub账号
 5. 来到如下主页，点击`New repository`
-![alt text](https://github.com/senai6667/senai6667.github.io/tree/main/magic/new repository.png "ways one")
+![alt text](https://github.com/senai6667/senai6667.github.io/blob/main/magic/new%20repository.png "ways one")
