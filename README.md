@@ -26,6 +26,25 @@ git init
 ```powershell
 New-Item -ItemType File -Path "D:/blog/README.md"
 ```
-4. 创建一个GitHub账号
-5. 来到如下主页，点击`New repository`
+## 创建一个github远程库用于储存代码
+1. 创建一个GitHub账号
+2. 来到如下主页，点击`New repository`
+
 ![alt text](https://github.com/senai6667/senai6667.github.io/blob/main/magic/new%20repository.png "ways one")
+
+3. 输入博客的名字，格式必须是`yourname.github.io`，repository类型选择`public`
+
+![alt text](https://github.com/senai6667/senai6667.github.io/blob/main/magic/new%20repository.png "ways two")
+
+4. 最后点击`create repository`一个github远程库就创建完成了
+
+![alt text](https://github.com/senai6667/senai6667.github.io/blob/main/magic/new%20repository.png "ways three")
+
+## 将本地库与远程库连接
+1. 回到powershell并且此时应该处于本地库的目录，如`D:/blog`
+2. 逐次运行以下命令
+```powershell
+git add .
+git commit -m "first commit"
+git push -u origin main
+```
