@@ -12,7 +12,7 @@ Install-Package -Name Git -ProviderName NuGet
 或者安装一个winget，也是一个windows系统的包管理器
 > https://learn.microsoft.com/en-us/windows/package-manager/winget/
 ## 在本地磁盘（建议不要在c盘）建立一个文件夹作为github的本地库
-*例子
+* 例子
 1. 在本地D盘新建立一个名为blog的文件夹
 2.打开powershell，利用命令，切换到该文件夹
 ```powershell
@@ -27,3 +27,5 @@ git init
 New-Item -ItemType File -Path "D:/blog/README.md"
 ```
 4. 创建一个GitHub账号
+5. 来到如下主页，点击`New repository`
+![alt text](https://github.com/senai6667/senai6667.github.io/tree/main/magic/new repository.png "ways one")
