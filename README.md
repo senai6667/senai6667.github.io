@@ -8,6 +8,7 @@ Install-Package -Name Git -ProviderName NuGet
 ```
 如果执行失败可以下载一个choco，一个windows系统的包管理器
 > https://chocolatey.org/install#psdsc
+
 或者安装一个winget，也是一个windows系统的包管理器
 > https://learn.microsoft.com/en-us/windows/package-manager/winget/
 ## 在本地磁盘（建议不要在c盘）建立一个文件夹作为github的本地库
@@ -21,4 +22,8 @@ cd D:/blog
 ```powershell
 git init
 ```
-3.
+3. 在该文件内新建一个README.md文件，里面可以写上你的博客介绍
+```powershell
+New-Item -ItemType File -Path "D:/blog/README.md"
+```
+4. 创建一个GitHub账号
