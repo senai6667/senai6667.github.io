@@ -53,12 +53,47 @@ git push -u origin main
 此时，本地库和github远程库连接成功，以后可以在本地库写代码，然后通过命令`git push origin main`推到github上面即可
 ## 以上步骤有可能出现的问题
 1. 运行`git push -u origin main`时出现`failed to push some refs to https://github.com/yourname/TEST2.git`
+
 原因：新建远程仓库的时候如果你勾选了Initialize this repository with a README（就是创建仓库的时候自动给你创建一个README文件）
+
 解决方案：由于你新创建的那个仓库里面的README文件不在本地仓库目录中，这时我们可以通过`it pull --rebase origin master`命令先将内容合并,此时再push就能成功了
+
 2. 运行`git remote add origin`时无法连接成功，或者运行`git push -u origin main`时无法推上去
+
 原因：国内上github很慢，这是网络问题，可以待会再试试或是挂了代理
+
 解决方法：
 ```powershell
 git config --global https.proxy http://127.0.0.1:xxxx
 ```
 其中`xxxx`为你的代理窗口编号
+
+## 利用`node`来生成静态网站
+
+1. 搭建`hexo`需要nodejs的环境，可以从官网下载
+> https://nodejs.org/zh-cn
+
+点击第一个：
+![alt text](https://github.com/senai6667/senai6667.github.io/blob/main/magic/download%20nodejs.png "ways four")
+
+在`powershell`中查看配置信息确认环境
+```powershell
+node -v
+npm -v
+```
+能够正常看到版本信息，说明配置环境已经完成
+
+2. 安装`nodejs`后，便有利`npm`包管理器，安装`hexo`很方便
+```powershell
+npm install hexo-cli -g
+```
+
+3. 初始化
+
+此时的`powershell`应该在`D:/blog`（你的本地库目录，不要进入.git目录里面），运行以下命令进行初始化
+
+```powershell
+hexo init "D:/blog" # "D:/blog"改为你自己设置的博客地址
+```
+
+啊啊啊，烂尾了，我之后的就不太会了，等我继续学会了再回来…………
